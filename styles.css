@@ -1,0 +1,131 @@
+body, html{
+    background: black;
+    overflow:hidden;
+    width:100%;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+nav {
+    position:absolute;
+    text-align: center;
+    vertical-align: middle;
+    width:100%;
+    /*border: 2px solid red;*/
+}
+nav > h1{
+    font-family: 'Nova Oval', cursive;
+    color:goldenrod;
+    font-size:36px;
+}
+
+.visible{
+    margin-left:0%;
+    position:fixed;
+    transition: all ease 1s;
+    opacity: 1;
+    max-width:100%;
+    overflow:auto;
+}
+
+.hidden{
+    margin-left:100%;
+    transition: all ease 1s;
+    opacity: 0;
+    max-width: 0%;
+    overflow: hidden;
+    
+}
+
+@media only screen and (min-width: 1080px){
+    .BoxContainer{
+        margin-left:43%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .BoxContainer{
+        margin-left:35%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){
+    .BoxContainer{
+    margin-left:35%;
+    }
+}
+.mark{
+    background-color:lightgoldenrodyellow;
+    color:black;
+}
+.picBox{
+    float:left;
+    align-content: center;
+    height: 100px;
+    margin:0.5em;
+}
+.picBox > img{
+    float:left;
+    height :64px;
+    width : 64px;
+}
+.picBox > span{
+    font-size: 0.45em;
+    float:left;
+    clear:left;
+    text-align: center;
+    width:64px;
+}
+.slide{
+    position:fixed;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'PT Sans', sans-serif;
+    font-size:2em;
+    bottom:30%;
+    width:100%;
+    display: table;
+    color:whitesmoke;
+    /*border: 2px solid red;*/
+
+}
+
+.linkbox {
+    /*transition: all ease 0.1s;*/
+    opacity:0.5;
+    float:left;
+    align-content: center;
+    height: 64px;
+    margin:0.5em;
+}
+
+.linkbox > a > img {
+    float:left;
+    height:32px;
+    width :32px;
+}
+.linkBox:hover {
+    /*transition: all ease 0.1s;*/
+    opacity: 1;
+}
+
+.linkBox > span{
+    font-size: 0.25em;
+    float:left;
+    clear:left;
+    text-align: center;
+    width:32px;
+}
