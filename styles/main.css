@@ -109,14 +109,14 @@ nav > h1{
     margin:0.5em;
 }
 
-.linkbox > a > img {
+.linkbox a img {
     transition: all ease 0.1s;
     opacity:0.5;
     float:left;
     height:32px;
     width :32px;
 }
-.linkBox >a >img:hover {
+.linkBox  a  img:hover {
     transition: all ease 0.1s;
     opacity: 1;
 }
