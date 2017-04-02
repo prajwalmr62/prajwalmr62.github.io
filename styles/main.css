@@ -24,7 +24,6 @@ nav {
     text-align: center;
     vertical-align: middle;
     width:100%;
-    /*border: 2px solid red;*/
 }
 nav > h1{
     font-family: 'Nova Oval', cursive;
@@ -104,8 +103,6 @@ nav > h1{
 }
 
 .linkbox {
-    /*transition: all ease 0.1s;*/
-    opacity:0.5;
     float:left;
     align-content: center;
     height: 64px;
@@ -113,12 +110,14 @@ nav > h1{
 }
 
 .linkbox > a > img {
+    transition: all ease 0.1s;
+    opacity:0.5;
     float:left;
     height:32px;
     width :32px;
 }
-.linkBox:hover {
-    /*transition: all ease 0.1s;*/
+.linkBox >a >img:hover {
+    transition: all ease 0.1s;
     opacity: 1;
 }
 
