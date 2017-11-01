@@ -1,6 +1,6 @@
 ﻿.app-nav {
-    height: 60px !important;
-    background-image: linear-gradient(to top, #000000 50%, transparent);
+    height: 40px !important;
+    background-color: $app-nav-background-color;
     padding: 0px;
 
     ul.nav {
@@ -9,26 +9,31 @@
 
         li.nav-item {
             a.nav-link {
+                color: $app-nav-item-color;
                 background-color: transparent;
-                border-bottom-width: 2px;
+                border-bottom-width: 5px;
                 border-bottom-style: solid;
                 border-radius: 0px;
-                border-bottom-color: $black;
-                transition:all 0.5s ease-in-out;
+                border-bottom-color: transparent;
+                transition: all 0.5s ease-in-out;
+                padding: .8rem 1rem 0.25rem 1rem;
+
                 &.active {
-                    border-bottom-color: $red;
+                    border-bottom-color: $app-nav-item-active-border;
+                    color: $app-nav-item-active-color;
+                    background-color: $app-nav-item-background-active-color;
+                }
+
+                .app-nav-icons {
+                    display: none !important;
                 }
             }
         }
     }
 }
 
-$svgfilter: url("#svgfilter");
-
-$image-url: url("../images/joshua-earle-183442.jpg");
-
 body, section.blur-div::before {
-    background: $image-url no-repeat #000;
+    background: $background-image-url no-repeat $background-color;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -36,15 +41,15 @@ body, section.blur-div::before {
 .blur-div {
     position: relative;
     overflow: hidden;
-    background-color: rgba(123, 210, 224, 0.15);
-    border: 2px solid rgba(0, 123, 255, 0.23);
+    background-color: $data-div-background-color;
+    border: 2px solid $data-div-border-color;
 
     > p {
         padding-top: 20px;
         padding-bottom: 10px;
         padding-left: 20px;
-        margin-bottom: 0px;
         padding-right: 20px;
+        margin-bottom: 0px;
     }
 }
 
@@ -52,7 +57,6 @@ body, section.blur-div::before {
     content: "";
     display: block;
     z-index: -1;
-    -ms-filter: $svgfilter !important;
     filter: blur(5px);
     position: absolute;
     width: 100%;
@@ -160,5 +164,23 @@ body, section.blur-div::before {
     padding:20px;
     img{
         width:100%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    .app-nav ul.nav li.nav-item {
+        a.nav-link {
+            padding: 0.33rem 1.25rem;
+
+            .nav-names {
+                display: none;
+            }
+
+            .app-nav-icons {
+                display: block !important;
+            }
+        }
     }
 }
