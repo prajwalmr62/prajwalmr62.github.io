@@ -537,6 +537,20 @@
         </section>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="blur-div" style="padding-bottom:20px; margin-top:60px;">
+            <div class="pb-4" id="credits">
+                <div class="badge badge-dark float-left" style="display: none;" data-color="white" data-toggle="tooltip" data-placement="top" data-title="Image by Scott Webb"><a href="https://www.pexels.com/photo/art-artistic-beautiful-bloom-311458/"><i class="material-icons text-light">camera</i></a></div>
+                <div class="badge badge-dark float-left" style="display: none;" data-color="red" data-toggle="tooltip" data-placement="top" data-title="Image by Victor Santos"><a href="https://www.pexels.com/photo/close-up-of-leaf-on-wooden-plank-325703/"><i class="material-icons text-light">camera</i></a></div>
+                <div class="badge badge-dark float-left" data-color="yellow" data-toggle="tooltip" data-placement="top" data-title="Image by George Becker"><a href="https://www.pexels.com/photo/backlit-buildings-clouds-dawn-238463/"><i class="material-icons text-light">camera</i></a></div>
+                <div class="badge badge-dark float-left" style="display: none;" data-color="black" data-toggle="tooltip" data-placement="top" data-title="Image by Joshua Earle"><a href="https://unsplash.com/@joshuaearle?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"><i class="material-icons text-light">camera</i></a></div>
+                <div class="text-center">Made with &hearts;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <div class="navbar app-nav fixed-bottom" id="bottomNav">
             <ul class="nav nav-pills">
                 <li class="nav-item">
@@ -581,6 +595,8 @@
             $("#theme-selector li.active").removeClass("active");
             $(e.target).addClass("active");
             $("#site-style").attr("href", "css/site_" + color + ".min.css");
+            $("#credits div[data-color]").hide();
+            $("#credits div[data-color='" + color + "']").show();
         })
     </script>
 </body>
