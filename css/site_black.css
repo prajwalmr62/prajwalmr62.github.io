@@ -5999,3 +5999,26 @@ body, section.blur-div::before {
     .app-nav ul.nav li.nav-item a.nav-link .app-nav-icons {
       display: block !important; } }
 
+.survey-popup {
+  position: fixed;
+  right: -1px;
+  text-align: center;
+  bottom: 40px;
+  color: black;
+  display: block;
+  width: 130px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* height: 30px; */
+  background: white;
+  padding: 20px;
+  /* float: left; */ }
+  .survey-popup > .material-icons {
+    font-size: 48px; }
+  .survey-popup .close {
+    top: 0;
+    right: 0px;
+    position: absolute;
+    cursor: pointer;
+    color: #dc3545; }
+
