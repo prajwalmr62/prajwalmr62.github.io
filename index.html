@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nagendra Prajwal M - Web Developer</title>
         <link id="site-style" rel="stylesheet" href="css/site_yellow.min.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+        <meta name="theme-color" content="#ffd02c">
 </head>
 <body data-spy="scroll" data-offset="450">
     <nav id="fat" class="navbar navbar-expand-md text-white navbar-default bg-black-50">
@@ -18,10 +20,10 @@
         </button>
         <div class="collapse navbar-collapse " id="navbarToggler">
             <ul class="navbar-nav mr-auto" id="theme-selector">
-                <li class="theme-color" data-color="black" style="background-image: linear-gradient(45deg, #0662a9, #011831)"></li>
-                <li class="theme-color" data-color="red" style="background-image:linear-gradient(45deg, #ff0119, #770611)"></li>
-                <li class="theme-color" data-color="white" style="background-image:linear-gradient(45deg, #e9ecef, #868e96)"></li>
-                <li class="theme-color active" data-color="yellow" style="background-image:linear-gradient(45deg, #ffd02c, #c7742e)"></li>
+                <li class="theme-color" data-color="black" data-theme="#0662a9" style="background-image: linear-gradient(45deg, #0662a9, #011831)"></li>
+                <li class="theme-color" data-color="red" data-theme="#770611" style="background-image:linear-gradient(45deg, #ff0119, #770611)"></li>
+                <li class="theme-color" data-color="white" data-theme="#e9ecef" style="background-image:linear-gradient(45deg, #e9ecef, #868e96)"></li>
+                <li class="theme-color active" data-color="yellow" data-theme="#ffd02c" style="background-image:linear-gradient(45deg, #ffd02c, #c7742e)"></li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -594,9 +596,11 @@
         $(".alert").alert();
         $("#theme-selector li").click(function (e) {
             var color = $(e.target).attr("data-color");
+            var theme = $(e.target).attr("data-theme");
             $("#theme-selector li.active").removeClass("active");
             $(e.target).addClass("active");
             $("#site-style").attr("href", "css/site_" + color + ".min.css");
+            $("meta[name='theme-color']").attr("content", theme);
             $("#credits div[data-color]").hide();
             $("#credits div[data-color='" + color + "']").show();
         });
