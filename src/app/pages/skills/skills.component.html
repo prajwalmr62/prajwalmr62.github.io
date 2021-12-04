@@ -1,0 +1,23 @@
+<div class="container pt-5">
+    <app-board header="Things I have worked on">
+        <p>I worked on veriety of software applications, Windows applications, Web Apps, Android and iOS apps. These are various techs I used in my projects.</p>
+    </app-board>
+    <ng-container *ngFor="let group of skillGroups">
+        <app-board [header]="group.name">
+            <div class="skill-container">
+                <ng-container *ngFor="let skill of group.skills">
+                    <app-skill-card [name]="skill.name"
+                        [img]="skill.img"
+                        [proficiency]="skill.proficiency">
+                    </app-skill-card>
+                </ng-container>
+            </div>
+        </app-board>
+    </ng-container>
+    <app-bottom-nav
+        previousUrl="/"
+        previousText="Go Home"
+        nextUrl="/work"
+        nextText="My Works"
+    ></app-bottom-nav>
+</div>

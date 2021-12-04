@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    // background-color: #f1f1f1;
+}
+
+.item-container {
+    padding: 8px;
+    position: relative;
+
+    .image-text {
+        transition: opacity 0.3s ease-in-out;
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        background-color: #010101aa;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &:hover, &:active {
+        .image-text {
+            opacity: 1;
+        }
+    }
+    
+}

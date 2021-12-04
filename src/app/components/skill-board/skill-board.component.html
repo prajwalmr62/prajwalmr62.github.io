@@ -1,0 +1,8 @@
+<div class="grid-container">
+    <div class="item-container" *ngFor="let item of items">
+        <img width="100%" [src]="item.src" [alt]="item.alt">
+        <div class="image-text">
+            {{item.alt}}
+        </div>
+    </div>
+</div>

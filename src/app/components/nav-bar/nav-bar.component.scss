@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: linear-gradient(-60deg, #ee775266, #e73c7e66, #23a6d566, #23d5ab66);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    z-index: 1;
+
+	.nav-logo {
+		text-decoration: none;
+		color: var(--dark);
+	}
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

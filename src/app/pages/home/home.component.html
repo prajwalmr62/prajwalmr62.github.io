@@ -1,0 +1,40 @@
+<div class="container mt-5">
+    <div class="about-me-section">
+        <app-info-card
+            id="profile"
+            description="Having 6+ years of experience under by belt, I am well-wersed in many of the latest front-end technologies. I have worked on gigantic products to tiny products, with same enthusiasm as day 1 of my career. Click on the below button to know more about me as a person."
+            heading="Let's get familiar"
+            link="/about"
+            linkText="Know more"
+        >
+        <div class="art-content">
+            <ng-lottie height="400px" [options]="lottieOptions.profile" (animationCreated)="animationCreated($event, 'profile')"></ng-lottie>
+        </div>
+        </app-info-card>
+
+        <app-info-card
+            [revert]="true"
+            description="I have worked on numerous technologies including but not limited the ones you see here. I do not hesitate to jump into new technologies and learn from scratch. Click on the below button to view my complete skillset and proficiency."
+            heading="Stuffs I'm good at ..."
+            link="/skills"
+            linkText="Explore my skills"
+        >
+            <div class="art-content">
+                <app-skill-board></app-skill-board>
+            </div>
+        </app-info-card>
+
+        <app-info-card
+            id="work"
+            description="Having experience in multiple organization ranging small to giganitc in size, whatever the team or product size, I have learnt to dive into the code and be productive as soon as possible."
+            heading="Places I have worked"
+            link="/work"
+            linkText="Know why I qualify"
+        >
+        <div class="art-content">
+            <ng-lottie height="400px" [options]="lottieOptions.work" (animationCreated)="animationCreated($event, 'work')"></ng-lottie>
+        </div>
+        </app-info-card>        
+    </div>
+</div>
+
