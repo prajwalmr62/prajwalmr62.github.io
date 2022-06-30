@@ -1,0 +1,62 @@
+.nav-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.certification-card {
+  display: flex;
+  justify-content: stretch;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 767px) {
+    flex-flow: column;
+  }
+
+  .details-container {
+    padding-left: 16px;
+
+    .certification-title h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .certification-details {
+      span {
+        display: inline-block;
+        border: 1px solid #eaeaea;
+        color: #a0a0a0;
+        padding: 8px 16px;
+        margin: 4px;
+      }
+    }
+  }
+}
+
+.job-card {
+  display: flex;
+  margin-bottom: 24px;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .details-container {
+    padding-left: 16px;
+    .company {
+      display: flex;
+      .name {
+        padding-right: 8px;
+      }
+
+      .duration {
+        color: #a0a0a0;
+      }
+    }
+
+    .description {
+      padding-top: 8px;
+    }
+  }
+}

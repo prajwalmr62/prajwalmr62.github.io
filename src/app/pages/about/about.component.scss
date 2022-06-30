@@ -1,0 +1,20 @@
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 16px;
+}
+.book {
+    display: flex;
+    max-width: 200px;
+    flex-flow: column;
+    transform: scale(1);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    img {
+        max-height: 270px;
+    }
+}

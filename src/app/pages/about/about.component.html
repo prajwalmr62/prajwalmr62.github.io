@@ -1,0 +1,52 @@
+<div class="container mt-4">
+    <div class="content">
+        <app-board header="About Me">
+                <p>
+                    As an engineer, My first and foremost goal is to provide such a product to users, which is useful, easy to use, and of-course, well written.
+                    The job is well done when we observe the customer satisfaction.
+                </p>
+                <p>
+                    Because I have only one goal, the success of the product, I do not hesitate to take up many roles.
+                    I became Jack-Of-All-Trades and have covered the void throughout my career.
+                    My relentless attempt to excel at web development made me well versed in many technologies.
+                </p>
+                <p>
+                    I believe that the software development is just like any other form of art.
+                    It takes a person’s creativity, knowledge and intelligence to design a beautiful and regal software.
+                    I also know that time is an important factor for all the decisions that have been taken and to be taken.
+                    You can rely on me to deliver the high quality project on time.
+                </p>
+                <p>In addition to above, I am voracious reader, technology enthusiast, curious being, and a very bad cook.</p>
+        </app-board>
+
+        <app-board header="What do I value the most?">
+            <ul>
+                <li><b>Values over money</b> - Do the right thing, not the money thing.</li>
+                <li><b>Form follows function</b> - Working app is better than good looking app.</li>
+                <li><b>Simple is better</b> - Simple solutions often do wonders.</li>
+                <li><b>Work smart</b> - Prioritize stuff. Unorganized tasks take more time.</li>
+                <li><b>Be curious</b> - Never stop finding new ways to do work.</li>
+                <li><b>Be kind</b> - Listen to others, respect their ideas.</li>
+                <li><b>Expect the unexpected</b> - Be prepared, always.</li>
+            </ul>
+        </app-board>
+
+        <app-board header="My Favorite Books">
+            <div class="book-container">
+                <ng-container *ngFor="let book of books">
+                    <a class="book" [href]="book.link" target="_blank">
+                        <img [alt]="book.name" [src]="book.img">
+                    </a>
+                </ng-container>
+            </div>
+        </app-board>
+
+        <!-- <app-random-trivia></app-random-trivia> -->
+    </div>
+    <app-bottom-nav
+        previousUrl="/"
+        previousText="Go Home"
+        nextUrl="/skills"
+        nextText="Expore My Skills"
+    ></app-bottom-nav>
+</div>

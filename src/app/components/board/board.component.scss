@@ -1,0 +1,16 @@
+.board {
+    border: 1px solid #eaeaea;
+    margin-bottom: 60px;
+    background: var(--white);
+
+    .card-header {
+        background-color: transparent;
+        border-bottom: 0px;
+        border-radius: 0px;
+        // background-image: linear-gradient(to bottom, rgba(255, 195, 195, 0.582) 0px, #fff0 100%);
+        h2{
+            font-size: 22px;
+            margin-bottom: 0px;
+        }
+    }
+}
