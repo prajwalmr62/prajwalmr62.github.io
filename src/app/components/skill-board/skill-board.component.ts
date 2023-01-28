@@ -18,16 +18,16 @@ export class SkillBoardComponent implements OnInit {
       alt: 'TypeScript'
     },
     {
-      src: './assets/images/javascript.svg',
-      alt: 'JavaScript'
-    },
-    {
       src: './assets/images/angular2.svg',
       alt: 'Angular'
     },
     {
       src: './assets/images/react.png',
       alt: 'React'
+    },
+    {
+      src: './assets/images/nx.png',
+      alt: 'Nx'
     },
     {
       src: './assets/images/nextjs.png',
@@ -46,8 +46,8 @@ export class SkillBoardComponent implements OnInit {
       alt: 'GraphQL'
     },
     {
-      src: './assets/images/HTML5.svg',
-      alt: 'HTML5'
+      src: './assets/images/cypress.png',
+      alt: 'Cypress'
     },
     {
       src: './assets/images/CSS3.svg',

@@ -43,6 +43,16 @@ export class SkillsComponent implements OnInit {
           proficiency: 80,
         },
         {
+          name: 'NgRx',
+          img: './assets/images/ngrx.png',
+          proficiency: 80,
+        },
+        {
+          name: 'Nx',
+          img: './assets/images/nx.png',
+          proficiency: 80,
+        },
+        {
           name: 'GraphQL',
           img: './assets/images/graphql.png',
           proficiency: 80,
@@ -167,6 +177,11 @@ export class SkillsComponent implements OnInit {
     {
       name: 'Testing Frameworks',
       skills: [
+        {
+          name: 'Cypress',
+          img: './assets/images/cypress.png',
+          proficiency: 70,
+        },
         {
           name: 'Jasmine',
           img: './assets/images/jasmine.svg',

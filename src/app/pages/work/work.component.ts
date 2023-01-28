@@ -80,13 +80,22 @@ export class WorkComponent {
 
   workDetails = [
     {
+      role: "Senior Software Engineer",
+      company: "F5 Networks",
+      img: "./assets/images/f5.svg",
+      from: "2022",
+      to: "Present",
+      description:
+        "Currently working on improving F5XC Console developer experience and platform stability.",
+    },
+    {
       role: "Software Engineer III",
       company: "F5 Networks",
       img: "./assets/images/f5.svg",
       from: "2020",
-      to: "Present",
+      to: "2022",
       description:
-        "Currently working on saas aspect of VoltConsole, worked on brand website of Volterra before. Technologies used are Angular, Nx, Gatsby, Nestjs.",
+        "Worked on saas aspect of F5XC, also worked on brand website of Volterra before acquisition. Technologies used are Angular, Nx, Gatsby, Nestjs.",
     },
     {
       role: "Senior Software Engineer",
