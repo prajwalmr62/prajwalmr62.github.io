@@ -13,7 +13,6 @@ import { ContactBoardComponent } from './components/contact-board/contact-board.
 import { AboutComponent } from './pages/about/about.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { WorkComponent } from './pages/work/work.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { BoardComponent } from './components/board/board.component';
 import { RandomTriviaComponent } from './pages/about/components/random-trivia/random-trivia.component';
 import { SkillCardComponent } from './pages/skills/components/skill-card/skill-card.component';
@@ -36,7 +35,6 @@ export function playerFactory() {
     AboutComponent,
     SkillsComponent,
     WorkComponent,
-    ContactComponent,
     BoardComponent,
     RandomTriviaComponent,
     SkillCardComponent,
