@@ -1,5 +1,5 @@
-import { DOCUMENT } from "@angular/common";
-import { AfterViewInit, Component, Inject } from "@angular/core";
+
+import { AfterViewInit, Component, Inject, DOCUMENT } from "@angular/core";
 import { AnimationItem } from "lottie-web";
 import { LottieComponent } from "ngx-lottie";
 import { InfoCardComponent } from "src/app/components/info-card/info-card.component";
