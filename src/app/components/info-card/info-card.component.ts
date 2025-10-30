@@ -1,9 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-info-card',
-  templateUrl: './info-card.component.html',
-  styleUrls: ['./info-card.component.scss']
+    selector: 'app-info-card',
+    templateUrl: './info-card.component.html',
+    styleUrls: ['./info-card.component.scss'],
+    imports: [
+        RouterModule,
+    ]
 })
 export class InfoCardComponent implements OnInit {
 

@@ -1,17 +1,24 @@
-import { DOCUMENT } from "@angular/common";
-import { AfterViewInit, Component, Inject } from "@angular/core";
+
+import { AfterViewInit, Component, Inject, DOCUMENT } from "@angular/core";
 import { AnimationItem } from "lottie-web";
-import { AnimationOptions } from "ngx-lottie";
+import { LottieComponent } from "ngx-lottie";
+import { InfoCardComponent } from "src/app/components/info-card/info-card.component";
+import { SkillBoardComponent } from "src/app/components/skill-board/skill-board.component";
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"],
+    selector: "app-home",
+    templateUrl: "./home.component.html",
+    styleUrls: ["./home.component.scss"],
+    imports: [
+        InfoCardComponent,
+        LottieComponent,
+        SkillBoardComponent,
+    ]
 })
 export class HomeComponent implements AfterViewInit {
-  lottieOptions: {
-    [key: string]: AnimationOptions;
-  } = {
+  // ngx-lottie v12 expects options shaped like this; use a flexible type to avoid
+  // coupling to a specific library version in the component.
+  lottieOptions: Record<string, any> = {
     profile: {
       path: "./assets/lotties/profile.json",
       autoplay: false,
@@ -28,7 +35,11 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     ['profile', 'work'].forEach(key => {
-      const element: Element = this.document.querySelector(`#${key}`) as Element;
+      const element = this.document.querySelector(`#${key}`);
+      if (!element) {
+        return;
+      }
+
       const observer = new window.IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
           this.playAnimation(key);

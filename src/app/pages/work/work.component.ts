@@ -1,9 +1,15 @@
 import { Component } from "@angular/core";
+import { BoardComponent } from "src/app/components/board/board.component";
+import { BottomNavComponent } from "src/app/components/bottom-nav/bottom-nav.component";
 
 @Component({
-  selector: "app-work",
-  templateUrl: "./work.component.html",
-  styleUrls: ["./work.component.scss"],
+    selector: "app-work",
+    templateUrl: "./work.component.html",
+    styleUrls: ["./work.component.scss"],
+    imports: [
+        BoardComponent,
+        BottomNavComponent
+    ]
 })
 export class WorkComponent {
   certificatesDetails = [
@@ -80,13 +86,22 @@ export class WorkComponent {
 
   workDetails = [
     {
-      role: "Senior Software Engineer",
+      role: "Principal Software Engineer",
       company: "F5 Networks",
       img: "./assets/images/f5.svg",
       from: "2022",
       to: "Present",
       description:
-        "Currently working on improving F5XC Console developer experience and platform stability.",
+        "Working on F5XC foundation team. Majorly focused on experience (DX) improvements and stability of the platform",
+    },
+    {
+      role: "Senior Software Engineer",
+      company: "F5 Networks",
+      img: "./assets/images/f5.svg",
+      from: "2022",
+      to: "2024",
+      description:
+        "Worked on F5XC Console platform, SaaS features, developer experience (DX) improvements, and stability of the platform.",
     },
     {
       role: "Software Engineer III",
@@ -95,7 +110,7 @@ export class WorkComponent {
       from: "2020",
       to: "2022",
       description:
-        "Worked on saas aspect of F5XC, also worked on brand website of Volterra before acquisition. Technologies used are Angular, Nx, Gatsby, Nestjs.",
+        "Worked on F5XC Console platform, brand websites, multiple documentation portals.",
     },
     {
       role: "Senior Software Engineer",
@@ -104,7 +119,7 @@ export class WorkComponent {
       from: "2019",
       to: "2020",
       description:
-        "I was responsible for developing OutreachCircle client platform, OutreachCircle supporter platform (Web & native app). Few of the technologies used were Angular, React, Flutter, GraphQL with Apollo-client on front-end.",
+        "Worked on developing OutreachCircle platform, which is an entirely new, research-based approach of connecting with voters by utilising the supporter’s personal contact book. Tech stack used: Angular, React, Flutter, NextJS for various apps along with GraqhQL.",
     },
     {
       role: "Senior Systems Engineer",
@@ -112,7 +127,7 @@ export class WorkComponent {
       img: "./assets/images/infosys.png",
       from: "2018",
       to: "2019",
-      description: "Worked on front-end application development, mainly on SPA of React or Angular. Typical work included finding out feasible architectural solutions for project requirements, studying provided UX for feasibility, ease of implementation, performance, and experience. Then leading development team to implement the same.",
+      description: "Worked on setting up frontend app for CPQ solution of an Agro-Tech company, which has to be used by dealers, customers, and guest users on desktop-web, mobile-web, and mobile-app. Tech stack used: Angular, React, .net Core, and related SAP products.",
     },
     {
       role: "Systems Engineer",
@@ -120,7 +135,7 @@ export class WorkComponent {
       img: "./assets/images/infosys.png",
       from: "2016",
       to: "2018",
-      description: "Worked as full-stack developer in the earlier years. Was working on WCF, .NET, C#, and ASP.NET MVC for sometime, along with HTML, Razor template, JavaScript (with jQuery), and Sass (CSS3, Bootstrap, and PostCSS). Typical framework used are Angular, React, and ASP.NET MVC. Apart from these I've also spent sometime on creating POC's on various technologies, making wireframes and mockups for new project proposals.",
+      description: "Worked on analytical tool for a leading Aerospace company. Entire presentation layer was re-written using ASP.NET MVC, jQuery, and Bootstrap in the span of 8 months.",
     },
     {
       role: "Bachelor of Engineering, Mechanical",

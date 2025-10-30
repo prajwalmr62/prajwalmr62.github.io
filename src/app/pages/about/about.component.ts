@@ -1,9 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { BoardComponent } from 'src/app/components/board/board.component';
+import { BottomNavComponent } from 'src/app/components/bottom-nav/bottom-nav.component';
+import { NavBarComponent } from 'src/app/components/nav-bar/nav-bar.component';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.scss'],
+    imports: [
+        BoardComponent,
+        BottomNavComponent,
+    ]
 })
 export class AboutComponent implements OnInit {
 

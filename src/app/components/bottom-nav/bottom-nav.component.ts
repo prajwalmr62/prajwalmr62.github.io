@@ -1,9 +1,15 @@
 import { Component, Input } from '@angular/core';
+import { BoardComponent } from '../board/board.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-bottom-nav',
-  templateUrl: './bottom-nav.component.html',
-  styleUrls: ['./bottom-nav.component.scss']
+    selector: 'app-bottom-nav',
+    templateUrl: './bottom-nav.component.html',
+    styleUrls: ['./bottom-nav.component.scss'],
+    imports: [
+        BoardComponent,
+        RouterModule
+    ]
 })
 export class BottomNavComponent {
 

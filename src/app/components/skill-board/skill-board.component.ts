@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-skill-board',
   templateUrl: './skill-board.component.html',
-  styleUrls: ['./skill-board.component.scss']
+  styleUrls: ['./skill-board.component.scss'],
+  standalone: true,
 })
 export class SkillBoardComponent implements OnInit {
 

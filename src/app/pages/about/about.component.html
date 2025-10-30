@@ -33,15 +33,14 @@
 
         <app-board header="My Favorite Books">
             <div class="book-container">
-                <ng-container *ngFor="let book of books">
+                @for (book of books; track book.name) {
                     <a class="book" [href]="book.link" target="_blank">
                         <img [alt]="book.name" [src]="book.img">
                     </a>
-                </ng-container>
+                }
             </div>
         </app-board>
 
-        <!-- <app-random-trivia></app-random-trivia> -->
     </div>
     <app-bottom-nav
         previousUrl="/"

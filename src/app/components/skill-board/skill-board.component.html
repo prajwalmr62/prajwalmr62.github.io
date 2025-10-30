@@ -1,8 +1,10 @@
 <div class="grid-container">
-    <div class="item-container" *ngFor="let item of items">
-        <img width="100%" [src]="item.src" [alt]="item.alt">
-        <div class="image-text">
-            {{item.alt}}
+    @for (item of items; track item.alt) {
+        <div class="item-container">
+            <img width="100%" [src]="item.src" [alt]="item.alt">
+            <div class="image-text">
+                {{item.alt}}
+            </div>
         </div>
-    </div>
+    }
 </div>

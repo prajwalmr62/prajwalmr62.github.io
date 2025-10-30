@@ -1,18 +1,15 @@
 <app-board>
     <div class="nav-links">
-        <a
-            *ngIf="previousUrl"
-            class="btn btn-outline-primary"
-            [routerLink]="previousUrl"
-        >
-            ← {{ previousText }}
-        </a>
-        <a
-            *ngIf="nextUrl"
-            class="btn btn-outline-primary"
-            [routerLink]="nextUrl"
-        >
-            {{nextText}} →
-        </a>
+        @if (previousUrl) {
+            <a class="btn btn-outline-primary" [routerLink]="previousUrl">
+                ← {{ previousText }}
+            </a>
+        }
+
+        @if (nextUrl) {
+            <a class="btn btn-outline-primary" [routerLink]="nextUrl">
+                {{ nextText }} →
+            </a>
+        }
     </div>
 </app-board>
