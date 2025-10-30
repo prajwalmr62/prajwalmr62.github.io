@@ -6,15 +6,15 @@ import { InfoCardComponent } from "src/app/components/info-card/info-card.compon
 import { SkillBoardComponent } from "src/app/components/skill-board/skill-board.component";
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"],
-  standalone: true,
-  imports: [
-    InfoCardComponent,
-    LottieComponent,
-    SkillBoardComponent,
-  ]})
+    selector: "app-home",
+    templateUrl: "./home.component.html",
+    styleUrls: ["./home.component.scss"],
+    imports: [
+        InfoCardComponent,
+        LottieComponent,
+        SkillBoardComponent,
+    ]
+})
 export class HomeComponent implements AfterViewInit {
   // ngx-lottie v12 expects options shaped like this; use a flexible type to avoid
   // coupling to a specific library version in the component.

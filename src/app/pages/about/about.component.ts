@@ -4,14 +4,13 @@ import { BottomNavComponent } from 'src/app/components/bottom-nav/bottom-nav.com
 import { NavBarComponent } from 'src/app/components/nav-bar/nav-bar.component';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
-  standalone: true,
-  imports: [ 
-    BoardComponent,
-    BottomNavComponent,
-  ]
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.scss'],
+    imports: [
+        BoardComponent,
+        BottomNavComponent,
+    ]
 })
 export class AboutComponent implements OnInit {
 

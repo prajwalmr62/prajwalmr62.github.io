@@ -8,16 +8,15 @@ import { ContactBoardComponent } from './components/contact-board/contact-board.
 declare const gtag: Function;
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  standalone: true,
-  imports: [
-    NavBarComponent,
-    BottomNavComponent,
-    RouterOutlet,
-    ContactBoardComponent,
-  ]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    imports: [
+        NavBarComponent,
+        BottomNavComponent,
+        RouterOutlet,
+        ContactBoardComponent,
+    ]
 })
 export class AppComponent {
   title = 'prajwalmr62-github-io';

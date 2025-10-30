@@ -3,14 +3,13 @@ import { BoardComponent } from "src/app/components/board/board.component";
 import { BottomNavComponent } from "src/app/components/bottom-nav/bottom-nav.component";
 
 @Component({
-  selector: "app-work",
-  templateUrl: "./work.component.html",
-  styleUrls: ["./work.component.scss"],
-  standalone: true,
-  imports: [
-    BoardComponent,
-    BottomNavComponent
-  ]
+    selector: "app-work",
+    templateUrl: "./work.component.html",
+    styleUrls: ["./work.component.scss"],
+    imports: [
+        BoardComponent,
+        BottomNavComponent
+    ]
 })
 export class WorkComponent {
   certificatesDetails = [

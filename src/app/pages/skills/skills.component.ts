@@ -4,15 +4,14 @@ import { BottomNavComponent } from 'src/app/components/bottom-nav/bottom-nav.com
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 
 @Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss'],
-  standalone: true,
-  imports: [
-    BoardComponent,
-    BottomNavComponent,
-    SkillCardComponent,
-  ]
+    selector: 'app-skills',
+    templateUrl: './skills.component.html',
+    styleUrls: ['./skills.component.scss'],
+    imports: [
+        BoardComponent,
+        BottomNavComponent,
+        SkillCardComponent,
+    ]
 })
 export class SkillsComponent implements OnInit {
 

@@ -3,14 +3,13 @@ import { BoardComponent } from '../board/board.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-bottom-nav',
-  templateUrl: './bottom-nav.component.html',
-  styleUrls: ['./bottom-nav.component.scss'],
-  standalone: true,
-  imports: [
-    BoardComponent,
-    RouterModule
-  ]
+    selector: 'app-bottom-nav',
+    templateUrl: './bottom-nav.component.html',
+    styleUrls: ['./bottom-nav.component.scss'],
+    imports: [
+        BoardComponent,
+        RouterModule
+    ]
 })
 export class BottomNavComponent {
 
