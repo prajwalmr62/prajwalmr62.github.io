@@ -1,20 +1,22 @@
 <div class="container mt-4">
   <div class="content">
     <app-board header="Timeline">
-        <div class="job-card" *ngFor="let job of workDetails">
-            <div class="logo-container">
-                <img [src]="job.img" width="50px" class="logo">
-            </div>
-            <div class="details-container">
-                <h2>{{job.role}}</h2>
-                <div class="company">
-                    <div class="name">{{job.company}}</div><div class="duration">{{job.from}} - {{job.to}}</div>
+    @for (job of workDetails; track $index) {
+            <div class="job-card">
+                <div class="logo-container">
+                    <img [src]="job.img" width="50px" class="logo">
                 </div>
-                <div class="description">
-                    {{job.description}}
+                <div class="details-container">
+                    <h2>{{job.role}}</h2>
+                    <div class="company">
+                        <div class="name">{{job.company}}</div><div class="duration">{{job.from}} - {{job.to}}</div>
+                    </div>
+                    <div class="description">
+                        {{job.description}}
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </app-board>
     <!-- <app-board header="Freetime Projects">
         <div>Part 1</div>
@@ -22,21 +24,25 @@
         <div>Part 3</div>
     </app-board> -->
     <app-board header="Certifications">
-        <div class="certification-card" *ngFor="let cert of certificatesDetails">
-          <div>
-              <img [src]="cert.img" height="150px" />
+    @for (cert of certificatesDetails; track cert.name) {
+          <div class="certification-card">
+            <div>
+                <img [src]="cert.img" height="150px" />
+            </div>
+            <div class="details-container">
+                <div class="certification-title">
+                    <h2>{{ cert.name }}</h2>
+                </div>
+                <div class="certification-details">
+                    @for (skill of cert.skills; track skill) {
+                        <span>
+                            {{ skill }}
+                        </span>
+                    }
+                </div>
+            </div>
           </div>
-          <div class="details-container">
-              <div class="certification-title">
-                  <h2>{{ cert.name }}</h2>
-              </div>
-              <div class="certification-details">
-                  <span *ngFor="let skill of cert.skills">
-                      {{ skill }}
-                  </span>
-              </div>
-          </div>
-        </div>
+        }
       </app-board>
       <app-bottom-nav
         previousUrl="/"

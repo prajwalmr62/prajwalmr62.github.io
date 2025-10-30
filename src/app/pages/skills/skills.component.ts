@@ -1,9 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { BoardComponent } from 'src/app/components/board/board.component';
+import { BottomNavComponent } from 'src/app/components/bottom-nav/bottom-nav.component';
+import { SkillCardComponent } from './components/skill-card/skill-card.component';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
+  standalone: true,
+  imports: [
+    BoardComponent,
+    BottomNavComponent,
+    SkillCardComponent,
+  ]
 })
 export class SkillsComponent implements OnInit {
 

@@ -1,9 +1,16 @@
 import { Component } from "@angular/core";
+import { BoardComponent } from "src/app/components/board/board.component";
+import { BottomNavComponent } from "src/app/components/bottom-nav/bottom-nav.component";
 
 @Component({
   selector: "app-work",
   templateUrl: "./work.component.html",
   styleUrls: ["./work.component.scss"],
+  standalone: true,
+  imports: [
+    BoardComponent,
+    BottomNavComponent
+  ]
 })
 export class WorkComponent {
   certificatesDetails = [
@@ -80,7 +87,7 @@ export class WorkComponent {
 
   workDetails = [
     {
-      role: "Senior Software Engineer",
+      role: "Principal Software Engineer",
       company: "F5 Networks",
       img: "./assets/images/f5.svg",
       from: "2022",

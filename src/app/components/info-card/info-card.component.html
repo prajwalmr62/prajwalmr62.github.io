@@ -1,18 +1,16 @@
 <div class="card-container" [class.alt]="revert">
     <div class="art-work">
-        <ng-container *ngIf="art else artContent">
+        @if (art) {
             <img height="100%" width="100%" [src]="art">
-        </ng-container>
+        } @else {
+            <ng-content select=".art-content"></ng-content>
+        }
     </div>
     <div class="description">
         <h2>{{heading}}</h2>
         {{description}}
-        <ng-container *ngIf="link">
+        @if (link) {
             <a class="btn btn-outline btn-outline-primary btn-md mt-4" [routerLink]="link">{{linkText}}</a>
-        </ng-container>
+        }
     </div>
 </div>
-
-<ng-template #artContent>
-    <ng-content select=".art-content"></ng-content>
-</ng-template>
