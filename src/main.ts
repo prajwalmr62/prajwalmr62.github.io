@@ -1,4 +1,4 @@
-import { enableProdMode, importProvidersFrom } from '@angular/core';
+import { enableProdMode, importProvidersFrom, provideZonelessChangeDetection } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -26,6 +26,8 @@ bootstrapApplication(AppComponent, {
       NgbProgressbarModule,
       NgbTooltipModule
     ),
+    // Enable zoneless change detection. Make sure Zone.js is NOT loaded (see polyfills.ts).
+    provideZonelessChangeDetection(),
     // provide empty/default lottie options with a player factory
     ...provideLottieOptions({ player: playerFactory })
   ]
