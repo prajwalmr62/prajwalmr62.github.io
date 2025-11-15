@@ -21,7 +21,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": {
-              "base": "docs"
+              "base": "../../docs"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -40,7 +40,8 @@
             "browser": "src/main.ts",
             "stylePreprocessorOptions": {
               "includePaths": [
-                "."
+                ".",
+                "../../node_modules"
               ]
             }
           },

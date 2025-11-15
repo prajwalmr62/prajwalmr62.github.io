@@ -1,3 +1,32 @@
-/.angular/cache
+# Dependencies
 node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Production
+dist
+build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+
+# Turbo
+.turbo
+
+# Angular
+.angular
+
+# Deployment (commented out for deployment branch)
 docs
