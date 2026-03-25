@@ -87,55 +87,86 @@ export class WorkComponent {
   workDetails = [
     {
       role: "Principal Software Engineer",
-      company: "F5 Networks",
+      company: "F5, Inc",
       img: "./assets/images/f5.svg",
-      from: "2022",
+      from: "2024",
       to: "Present",
-      description:
-        "Working on F5XC foundation team. Majorly focused on experience (DX) improvements and stability of the platform",
+      description: {
+        intro: "Leading frontend architecture initiatives for the F5 Distributed Cloud platform, driving developer experience improvements and platform stability alongside feature development.",
+        bullets: [
+          "Led UI efforts for FedRAMP compliance, ensuring UI adheres to security and audit requirements.",
+          "Improved build performance by 30% and e2e performance by 11x by leveraging Nx optimization.",
+          "Leading multiple tracks; shipped 10+ key features on schedule.",
+          "Recognized with multiple F5 group awards for delivery excellence."
+        ]
+      }
     },
     {
       role: "Senior Software Engineer",
-      company: "F5 Networks",
+      company: "F5, Inc",
       img: "./assets/images/f5.svg",
       from: "2022",
       to: "2024",
-      description:
-        "Worked on F5XC Console platform, SaaS features, developer experience (DX) improvements, and stability of the platform.",
+      description: {
+        intro: "Architected and developed features for the F5 Distributed Cloud Platform.",
+        bullets: [
+          "Collaborated with cross-functional teams to deliver key features impacting 1000+ enterprise clients.",
+          "Established key architectural patterns for UI development; onboarded multiple teams onto the Console Platform.",
+          "Mentored 5+ junior developers on best practices and architectural patterns.",
+          "Initiated and led SaaS track, shipping critical subscription and billing features ahead of schedule.",
+          "Received multiple shoutouts and F5 group awards for delivery excellence and technical leadership."
+        ]
+      }
     },
     {
       role: "Software Engineer III",
-      company: "F5 Networks",
+      company: "F5, Inc",
       img: "./assets/images/f5.svg",
       from: "2020",
       to: "2022",
-      description:
-        "Worked on F5XC Console platform, brand websites, multiple documentation portals.",
+      description: {
+        intro: "Developed and maintained the F5 Distributed Cloud Console platform, marketing websites, and technical documentation portals using Angular, React, and Gatsby.",
+        bullets: [
+          "Built and deployed comprehensive API documentation portal in 2 weeks using React, Redux, and Express JS, serving 500+ developers.",
+          "Shipped 20+ features for the Console platform, contributing to increased user adoption and platform stability.",
+          "Recognized for consistent delivery and technical excellence."
+        ]
+      }
     },
     {
       role: "Senior Software Engineer",
-      company: "OutreachCircle, Inc",
+      company: "VoterCircle, Inc.",
       img: "./assets/images/outreachcircle.jpeg",
       from: "2019",
       to: "2020",
-      description:
-        "Worked on developing OutreachCircle platform, which is an entirely new, research-based approach of connecting with voters by utilising the supporter’s personal contact book. Tech stack used: Angular, React, Flutter, NextJS for various apps along with GraqhQL.",
+      description: {
+        intro: "Led frontend development for OutreachCircle, a research-driven voter engagement application that enables canvassing through personal networks. Architected and built multiple applications (web, Android, iOS) using React, Angular, Next.js, and Flutter with GraphQL integration. OutreachCircle is now one of the largest election canvassing platforms in the US.",
+        bullets: []
+      }
     },
     {
       role: "Senior Systems Engineer",
-      company: "Infosys Limited",
+      company: "Infosys Ltd.",
       img: "./assets/images/infosys.png",
       from: "2018",
       to: "2019",
-      description: "Worked on setting up frontend app for CPQ solution of an Agro-Tech company, which has to be used by dealers, customers, and guest users on desktop-web, mobile-web, and mobile-app. Tech stack used: Angular, React, .net Core, and related SAP products.",
+      description: {
+        intro: "Architected and led UI development (team size 10+) for a multi-platform CPQ (Configure- Price-Quote) solution for a major Agro-Tech company, supporting desktop web, mobile web, and native mobile applications for dealers, customers, and guest users.",
+        bullets: [
+          "Built responsive, accessible UIs using Angular and React with .NET Core backend integration."
+        ]
+      }
     },
     {
       role: "Systems Engineer",
-      company: "Infosys Limited",
+      company: "Infosys Ltd.",
       img: "./assets/images/infosys.png",
       from: "2016",
       to: "2018",
-      description: "Worked on analytical tool for a leading Aerospace company. Entire presentation layer was re-written using ASP.NET MVC, jQuery, and Bootstrap in the span of 8 months.",
+      description: {
+        intro: "Led UI efforts for the redevelopment of an analytics platform for a leading Aerospace company, modernizing the presentation layer from legacy code to ASP.NET MVC, jQuery, and Bootstrap. Delivered complete rewrite in 8 months.",
+        bullets: []
+      }
     },
     {
       role: "Bachelor of Engineering, Mechanical",
@@ -143,7 +174,10 @@ export class WorkComponent {
       img: "./assets/images/vtu.png",
       from: '2011',
       to: '2015',
-      description: 'Graduated with first class (70.01%).  Participated in many national level seminars and other stream related competitions. Participated in extra-curricular competitions.'
+      description: {
+        intro: 'Graduated with first class (70.01%).  Participated in many national level seminars and other stream related competitions. Participated in extra-curricular competitions.',
+        bullets: []
+      }
     }
   ];
 }

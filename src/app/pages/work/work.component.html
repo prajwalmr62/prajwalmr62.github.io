@@ -12,7 +12,16 @@
                         <div class="name">{{job.company}}</div><div class="duration">{{job.from}} - {{job.to}}</div>
                     </div>
                     <div class="description">
-                        {{job.description}}
+                        @if (job.description.intro) {
+                            <p>{{job.description.intro}}</p>
+                        }
+                        @if (job.description.bullets && job.description.bullets.length > 0) {
+                            <ul>
+                                @for (bullet of job.description.bullets; track bullet) {
+                                    <li>{{bullet}}</li>
+                                }
+                            </ul>
+                        }
                     </div>
                 </div>
             </div>
