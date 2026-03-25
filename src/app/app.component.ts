@@ -10,10 +10,8 @@ declare const gtag: Function;
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
     imports: [
         NavBarComponent,
-        BottomNavComponent,
         RouterOutlet,
         ContactBoardComponent,
     ]
